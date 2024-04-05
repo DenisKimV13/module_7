@@ -1,0 +1,173 @@
+body{
+    width: 1120px;
+    height: 398px;
+}
+@font-face {
+    font-family: "TTLakes-Thin";
+    src: url(./TTLakes/TTLakes-Thin.woff) format(woff);
+}
+.brends{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 1120px;
+    height: 398px;
+    background-color: #F8F8F8;
+}
+.brends_head{
+    width: 1120px;
+    height: 56px;
+    background-image: linear-gradient(90deg, #F8F8F8, #FFFFFF);
+}
+.p1{
+    width: 338px;
+    height: 24px;
+    padding-left: 32px;
+    font-family: "TTLakes-Thin", sans-serif;
+    font-size: 16px;
+    color: #7E7E82;
+}
+.btn{
+    width: 240px;
+    height: 72px;
+    border: none;
+    background-color: #FFFFFF;
+    margin-left: 32px;
+}
+.brends_items_1{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.btn_1{
+    background-image: url(img/Lenovo.png);
+    background-repeat: no-repeat;
+}
+.btn_2{
+    background-image: url(img/Samsung.png);
+    background-repeat: no-repeat;
+}
+.btn_3{
+    background-image: url(img/Apple.png);
+    background-repeat: no-repeat;
+}
+.btn_4{
+    background-image: url(img/ViewSonic.png);
+    background-repeat: no-repeat;
+}
+.btn_5{
+    background-image: url(img/Bosch.png);
+    background-repeat: no-repeat;
+}
+.btn_6{
+    background-image: url(img/Hp.png);
+    background-repeat: no-repeat;
+}
+.btn_7{
+    background-image: url(img/Acer.png);
+    background-repeat: no-repeat;
+}
+.btn_8{
+    background-image: url(img/Sony.png);
+    background-repeat: no-repeat;
+}
+.btn_9{
+    background-image: url(img/Lenovo.png);
+    background-repeat: no-repeat;
+}
+.btn_10{
+    background-image: url(img/Samsung.png);
+    background-repeat: no-repeat;
+}
+.btn_11{
+    background-image: url(img/Apple.png);
+    background-repeat: no-repeat;
+}
+.brends{
+    max-height: 210px;
+    overflow: hidden;
+}
+.read-more-cheker{
+    opacity: 0;
+    position: absolute;
+}
+.read-more-button{
+    cursor: pointer;
+    display: inline-block;
+    font-family: "TTLakes-Thin";
+    margin-left: 32px;
+
+}
+.read-more-cheker ~ .read-more-button:after{
+    width: 133px;
+    height: 24px;
+    font-size: 16px;
+    content: url('./img/icon.png')"Показать все";
+}
+.read-more-cheker:checked ~ .read-more-button:after{
+    width: 88px;
+    height: 24px;
+    font-size: 16px;
+    content: url('./img/icon1.png')"Скрыть";
+}
+.read-more-cheker:checked ~ .brends{
+    max-height: none;
+}
+@media (max-width: 768px) {
+    .btn_4, .btn_8, .btn_9, .btn_10, .btn_11, .brends_items_2{
+        display: none;
+    }
+    .brends{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        background-color: #F8F8F8;
+        width: 768px;
+        height: 322px;
+    }
+    .brends_items_1{
+        width: 768px;
+    }
+    .btn{
+        width: 224px;
+        height: 72px;
+        margin-left: 24px;
+    }
+}
+@media (max-width: 320px) {
+    .brends_items_2, .btn_7, .btn_5, .btn_6, .btn_8{
+        display: none;
+    }
+    .brends{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        background-color: #F8F8F8;
+        width: 320px;
+        height: 234px;
+        overflow: hidden;
+    }
+    .brends_head{
+        width: 320px;
+        height: 80px;
+        background-image: linear-gradient(90deg, #F8F8F8, #FFFFFF);
+    }
+    .p1{
+        width: 228px;
+        height: 48px;
+        padding-left: 16px;
+        font-family: "TTLakes-Thin", sans-serif;
+        font-size: 16px;
+        color: #7E7E82;
+    }
+    .brends_items_1{
+        width: 320px;
+        overflow: hidden;
+        }
+    .btn{
+        width: 240px;
+        height: 72px;
+        margin-left: 24px;
+    }
+}
+
+
